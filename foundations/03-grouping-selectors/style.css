@@ -1,0 +1,15 @@
+
+.fir{
+    color: #FFFFFF;
+    background-color: black;
+}
+
+.sec{
+    background-color: yellow;
+}
+
+.fir,
+.sec{
+    font-size: 28px;
+    font-family: Helvetica, "Times New Roman", sans-serif;
+}
