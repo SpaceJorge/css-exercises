@@ -1,0 +1,19 @@
+.theclass{
+    background-color: #ee776e99;
+    font-family: "Verdana", "DejaVu Sans", sans-serif;
+}
+
+#two{
+    color: #0000FF;
+    font-size: 36px;
+}
+
+#three{
+    font-size: 24px;
+}
+
+#four{
+    background-color: #00FF2299;
+    font-size: 24px;
+    font-weight: bold;
+}
