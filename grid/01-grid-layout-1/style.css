@@ -8,6 +8,28 @@ body, html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  
+  display: grid;
+  /* MY SOLUTION
+  grid-template-areas:
+    'header header header header'
+    'sidebar nav nav nav'
+    'sidebar article article article'
+    'sidebar article article article'
+    'sidebar article article article'
+    'sidebar article article article'
+    'footer footer footer footer';
+    
+  gap: 15px;
+  */
+  grid-template-areas:
+    'header header'
+    'sidebar nav'
+    'sidebar article'
+    'footer footer';
+  grid-template-rows: 1fr 1fr 3fr 1fr;
+  grid-template-columns: 1fr 3fr;
+  gap: 15px;
 }
 
 .container div {
@@ -21,18 +43,26 @@ body, html {
 
 .header {
   background-color: #FFDE22;
+  
+  grid-area: header;
 }
 
 .sidebar {
   background-color: #FF7755;
+
+  grid-area: sidebar;
 }
 
 .nav {
   background-color: #00DDFF;
+
+  grid-area: nav;
 }
 
 .article {
   background-color: #bccbde;
+
+  grid-area: article;
 }
 
 .article p {
@@ -44,4 +74,6 @@ body, html {
 
 .footer {
   background-color: #393f4d;
+
+  grid-area: footer;
 }
